@@ -1,0 +1,63 @@
+.opinion{
+  margin-bottom: 200px;
+}
+.opinion__inner{
+  display: flex;
+  position: relative;
+}
+
+.opinion__text{
+  position: absolute;
+  font-weight: 700;
+  font-size: rem(120);
+  text-transform: uppercase;
+  color: #000;
+  white-space: nowrap;
+}
+.opinion__text-left{
+  left: -70%;
+  top: 20%;
+}
+.opinion__text-right{
+  right: -96%;
+  top: 60%;
+}
+
+.opinion__col{
+  width: 33.33333%;
+
+  &:first-child{
+    width: 30%;
+  }
+}
+
+.opinion__box{
+  margin-left: 60px;
+  margin-top: 110px;
+}
+.opinion__title{
+  font-size: rem(32);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.opinion__img{
+  position: relative;
+  z-index: 2;
+}
+.opinion__wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.opinion__wrapper-over{
+  z-index: 3;
+  overflow: hidden;
+
+  .opinion__text{
+    color: #fff;
+  }
+}

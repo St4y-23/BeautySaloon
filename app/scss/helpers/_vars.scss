@@ -1,0 +1,19 @@
+$text: #5e5e5e;
+$black: #2c2c2c;
+$white: #f2efeb;
+$beige: #dcc29c;
+$pink: #f3efec;
+
+
+@function rem($px) {
+  @return ($px / 16) +rem;
+}
+
+@mixin centr{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
