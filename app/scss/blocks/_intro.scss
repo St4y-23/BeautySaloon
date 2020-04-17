@@ -69,22 +69,26 @@
   font-weight: 600;
   margin-bottom: 40px;
 }
-.intro__scroll{
-  position: absolute;
-  transform: rotate(-90deg);
-  font-size: rem(18);
-  font-weight: 600;
-  text-transform: uppercase;
-  bottom: 130px;
 
-  &::before{
-    position: absolute;
-    content: '';
-    width: 110px;
-    height: 2px;
-    background-color: #8c6787;
-    left: -130px;
-    top: 40%;
+.intro__scrollArrow{
+  position: absolute;
+  bottom: 50px;
+  left: 5%;
+
+  animation-name: scrollArrow;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes scrollArrow{
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
   }
 }
 
