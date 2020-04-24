@@ -92,7 +92,7 @@
 	&.active{
 		transform: translateX(0);
 		opacity: 1;
-		box-shadow: 0 0 10px 10px rgba(#d1d1d1, .7);
+		box-shadow: 0 0 10px 10px rgba(#b6b2b2, .7);
 	}
 }
 .nav__link{
@@ -112,16 +112,11 @@
 	background-repeat: no-repeat;
 	color: transparent;
 	background-clip: text;
-	transition: 0.5s linear;
-	
+  transition: 0.5s linear;
+  	
 	&:hover {
 		background-size: 100%;
 	}
 }
 
 
-@media (max-width: 850px){
-  .header__box{
-    display: none;
-  }
-}

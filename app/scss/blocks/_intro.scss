@@ -2,12 +2,13 @@
   background-image: url(../img/intro/intro__bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: right;
   height: 100vh;
   position: relative;
   margin-bottom: 400px;
 }
 .no-webp .intro{
-  background-image: url(../img/intro/intro__bg.webp);
+  background-image: url(../img/intro/intro__bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -123,18 +124,6 @@
 }
 
 
-@media (max-width: 1700px){
-  .introCon{
-    padding-left: 115px;
-    padding-right: 15px;
-  }
-}
-
-@media (max-width: 1300px){
-  .intro__info{
-    display: none;
-  }
-}
 
 
 

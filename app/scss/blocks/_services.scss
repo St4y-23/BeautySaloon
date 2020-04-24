@@ -1,8 +1,5 @@
 .services{
   margin-bottom: 240px;
-
-  
-  display: none;
 }
 .services__up{
   display: flex;
@@ -45,7 +42,6 @@
   text-transform: uppercase;
   font-size: rem(20);
   letter-spacing: 2px;
-  // background-color: rgba(#000, .2);
 
   span{
     position: absolute;
@@ -96,46 +92,4 @@
   }
 }
 
-// Slider
-.slide__arrow{
-  position: absolute;
-  bottom: 25px;
-  font-size: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
-  z-index: 2;
-  transition: linear .2s;
-  opacity: 1;
 
-  &:active,
-  &:hover{
-    .arrow__icon{
-      fill: $beige;
-    }
-  }
-}
-.arrow__left{
-  left: -10px;
-  bottom: 70px;
-  transform: rotate(180deg);
-}
-.arrow__right{
-  right: -15px;
-}
-
-
-.services__slider{
-  margin-bottom: 30px;
-
-  &:hover{
-    .slide__arrow{
-      opacity: 1;
-    }
-    .services__textLeft{
-      span{
-        color: $beige;
-      }
-    }
-  }
-}

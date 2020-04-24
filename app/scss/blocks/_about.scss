@@ -21,6 +21,10 @@
   position: absolute;
   bottom: -100px;
   left: 0;
+
+  img{
+    display: flex;
+  }
 }
 .about__text{
   margin-bottom: 35px;
@@ -29,3 +33,4 @@
 .about__btn{
   margin-left: 30px;
 }
+

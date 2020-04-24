@@ -14,8 +14,18 @@ $(function () {
     slidesToShow: 1,
     arrows: true,
     fade: true,
+    adaptiveHeight: true,
     prevArrow: '<button type="button" class="slick-prev slide__arrow reviews__arrow-left"><svg class="arrow__icon"><use xlink:href="#arrow"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-prev slide__arrow reviews__arrow-right"><svg class="arrow__icon"><use xlink:href="#arrow"></use></svg></button>'
+    nextArrow: '<button type="button" class="slick-prev slide__arrow reviews__arrow-right"><svg class="arrow__icon"><use xlink:href="#arrow"></use></svg></button>',
+    responsive: [
+      {
+        breakpoint: 1050,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      },
+    ]
   });
 
   $('.news__slider').slick({
@@ -23,7 +33,26 @@ $(function () {
     slidesToShow: 3,
     arrows: true,
     prevArrow: '<button type="button" class="slick-prev slide__arrow news__arrow-left"><svg class="arrow__icon"><use xlink:href="#arrow"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-prev slide__arrow news__arrow-right"><svg class="arrow__icon"><use xlink:href="#arrow"></use></svg></button>'
+    nextArrow: '<button type="button" class="slick-prev slide__arrow news__arrow-right"><svg class="arrow__icon"><use xlink:href="#arrow"></use></svg></button>',
+    responsive: [
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          fade: true,
+          arrows: false,
+          dots: true,
+        }
+      },
+    ]
   });
 
 
@@ -38,15 +67,15 @@ $(function () {
     $( el ).BeerSlider( {start: $( el ).data( "start" ) } )
   });
 
+  
   // Fixed header
   let header = $("#header");
-  let intro = $("#header");
+  let intro = $("#intro");
   // let introH = intro.height();       <----/* Высота элемента без падингов */
   let introH = intro.innerHeight();          /* Высота элемента с падингами */
   let scrollPos = $(window).scrollTop();     /* Позиция скролла от самого верха */
   checkScroll(scrollPos, introH);
   let nav = $("#nav")
-  let navToggle = $("#navToggle");
 
   $(window).on("scroll resize", function () {         /* Выполнение действий при скролле, (load) загрузке изменении размера страницы */
     introH = intro.innerHeight();
@@ -71,8 +100,8 @@ $(function () {
     let elementOffset = $(elementID).offset().top;            /* Получить отступ от верха страницы  */
 
     nav.removeClass("active"),
-      $('.ham').toggleClass("active"),
-      $('.header').toggleClass('show')
+      $(".ham").toggleClass("active"),
+      $(".header").toggleClass("show")
 
     // console.log(elementOffset);
 
@@ -81,8 +110,12 @@ $(function () {
     }, 500);                                                /* Скорость прокрутки где 1000 - 1 секунда */
   });
 
+  
+  
+
   $('.ham').on('click', function () {
     $('.nav').toggleClass('active')
   });
+
 
 });
