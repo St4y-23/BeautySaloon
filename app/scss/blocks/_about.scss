@@ -1,0 +1,36 @@
+.about{
+  background-color: $pink;
+  margin-bottom: 160px;
+}
+.about__inner{
+  padding: 100px 0;
+  display: flex;
+  position: relative;
+}
+.about__bgText{
+  top: -105px;
+  left: 50%;
+  transform: translate(-30%);
+}
+.about__col{
+  width: 50%;
+  position: relative;
+  padding: 0 15px;
+}
+.about__img{
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+
+  img{
+    display: flex;
+  }
+}
+.about__text{
+  margin-bottom: 35px;
+  margin-left: 30px;
+}
+.about__btn{
+  margin-left: 30px;
+}
+

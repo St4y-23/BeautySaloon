@@ -1,0 +1,23 @@
+.arrow__icon{
+  width: 55px;
+  height: 55px;
+  fill: rgba($beige, .5);
+  transition: linear .2s;
+}
+.star__icon{
+  width: 27px;
+  height: 27px;
+  fill: $beige;
+}
+.social__icon{
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  transition: linear .2s;
+}
+.downArrow__icon{
+  width: 30px;
+  height: 30px;
+  fill: #000;
+  transition: linear .2s;
+}
