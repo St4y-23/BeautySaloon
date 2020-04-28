@@ -23,6 +23,18 @@
 
 <body>
 
+	<div class="preloader">
+		<svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+			<path fill="#000"
+				d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			</path>
+		</svg>
+	</div>
+
+	<!-- <div id='wrap_preloader'>
+    Идет загрузка...
+  </div> -->
+
 	<!-- Sprites -->
 	<svg style="display: none;">
 
@@ -189,6 +201,7 @@
 
 	<!-- Intro -->
 	<section class="intro introCon" id="intro">
+		<div class="intro__bg"></div>
 		<div class="container">
 
 			<div class="intro__content" id="introContent">
@@ -201,18 +214,50 @@
 						</picture>
 					</a>
 					<div class="intro__info">
-						<div class="intro__item">10:00 - 18:00 MON-FRI</div>
-						<div class="intro__item">+1 (023) 456 - 789</div>
-						<div class="intro__item">contact@hairdresser.com</div>
+						<div class="intro__item">
+							<div class="intro__item-stick"></div>
+							<div class="intro__item-text">10:00 - 18:00 MON-FRI</div>
+						</div>
+						<div class="intro__item">
+							<div class="intro__item-stick"></div>
+							<div class="intro__item-text">+1 (023) 456 - 789</div>
+						</div>
+						<div class="intro__item">
+							<div class="intro__item-stick"></div>
+							<div class="intro__item-text">contact@hairdresser.com</div>
+						</div>
 					</div>
-					<div class="intro__btn btn btn--on">book now</div>
+					<div class="intro__btn-box2">
+						<div class="intro__btn btn btn--on">book now</div>
+					</div>
 				</div>
 
 				<div class="intro__inner">
-					<h1 class="intro__title">Style is a choise. <br> Make yours.</h1>
-					<div class="intro__text text">We invite you to spend some time in Beauty Saloon. <br> Our masters realize your
-						every idea at the highest level.</div>
-					<div class="intro__btn btn">our services</div>
+
+					<div class="intro__col">
+						<div class="intro__box">
+							<h1 class="intro__title">Style is a choise. <br> Make yours.</h1>
+							<div class="intro__text text">We invite you to spend some time in Beauty Saloon. <br> Our masters realize
+								your
+								every idea at the highest level.</div>
+							<div class="intro__btn-box1">
+								<div class="intro__btn btn">our services</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="intro__col">
+						<div class="intro__col-box">
+							<div class="intro__img">
+								<picture>
+									<source class="img" srcset="img/intro/intro__img.webp" type="image/webp">
+									<img class="img" src="img/intro/intro__img.png" alt="">
+								</picture>
+							</div>
+							<div class="intro__img-circle"><span class="intro__img-circle__span"></span></div>
+						</div>
+					</div>
+
 				</div>
 
 			</div>
@@ -237,6 +282,7 @@
 				<div class="about__col">
 					<div class="about__img">
 						<picture>
+							<img class="lazyload" data-src="img/about/about__girl.webp" />
 							<source class="img_flex" srcset="img/about/about__girl.webp" type="image/webp">
 							<img class="img_flex" src="img/about/about__girl.png" alt="">
 						</picture>
@@ -934,6 +980,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/modernizr-custom.js"></script>
 <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
