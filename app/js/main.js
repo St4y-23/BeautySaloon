@@ -126,7 +126,6 @@ $(function () {
 
     nav.removeClass("active"),
       $(".ham").toggleClass("active"),
-      $(".header").toggleClass("show")
 
     // console.log(elementOffset);
 
