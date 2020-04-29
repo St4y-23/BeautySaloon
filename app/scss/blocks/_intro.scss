@@ -3,7 +3,6 @@
   position: relative;
   margin-bottom: 400px;
 }
-
 .intro__bg{
   background-color: $pink;
   width: 100%;
@@ -112,6 +111,20 @@
   position: relative;
   z-index: 3;
 }
+.intro__title{
+  text-transform: uppercase;
+  font-size: rem(72);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.intro__text{
+  font-size: rem(19);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.intro__btn-box2--down{
+  display: none;
+}
 .intro__col-box{
   position: relative;
   display: flex;
@@ -123,8 +136,8 @@
 .intro__img-circle{
   position: absolute;
   @include centr;
-  width: 320px;
-  height: 320px;
+  width: 50%;
+  height: 35%;
   background: none;
 
   span{
@@ -137,17 +150,7 @@
   }
 }
 
-.intro__title{
-  text-transform: uppercase;
-  font-size: rem(72);
-  line-height: 1;
-  margin-bottom: 20px;
-}
-.intro__text{
-  font-size: rem(19);
-  font-weight: 600;
-  margin-bottom: 40px;
-}
+
 
 .intro__scrollArrow{
   position: absolute;

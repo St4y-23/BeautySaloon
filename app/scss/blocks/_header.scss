@@ -1,11 +1,18 @@
 .header{
   position: absolute;
   top: 0;
-  left: 0;
   width: auto;
   height: 100%;
-  background-color: #fff;
   z-index: 10;
+}
+.header__bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9;
 }
 .header__inner{
   display: flex;
@@ -18,6 +25,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 9;
 }
 .header__link{
   text-align: center;
@@ -74,8 +83,7 @@
 // Menu
 .nav {
 	position: fixed;
-	top: 0;
-	left: 0;
+  top: 0;
 	height: 100%;
   display: flex;
 	flex-direction: column;
