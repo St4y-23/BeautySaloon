@@ -1,25 +1,27 @@
-$(window).on('load', function () {
-  $('.preloader').delay(500).fadeToggle(500);
+// $(window).on('load', function () {
+//   $('.preloader').delay(500).fadeToggle(500);
 
 
-  var link = Array.prototype.slice.call(document.querySelectorAll(".header__link")).reverse();
+//   var link = Array.prototype.slice.call(document.querySelectorAll(".header__link")).reverse();
 
-  var tl = gsap.timeline({defaults:{duration: 1}});
-              tl.from(".intro__bg", {delay: 1, x: '-100%'})
-                .from(".header", {x: '-100%', opacity: .5}, "-=.5")
-                .from(".ham", {opacity: 0})
-                .from(".intro__logo", {x: '-50%', opacity: 0}, "-=.5")
-                .from(".intro__item-stick", {x: '-100%', width: 0, opacity: 0}, "-=1")
-                .from(".intro__item-text", {x: '-10%', opacity: 0}, "-=.2")
-                .from(".intro__btn-box2", {x: '-20%', opacity: 0}, "-=.8")
-                .from(link, {stagger: .3, opacity: 0}, "-=1.5")
-                .from(".intro__title", {y: '20%', opacity: 0}, "-=1.5")
-                .from(".intro__text", {y: '50%', opacity: 0}, "-=1.3")
-                .from(".intro__btn-box1", {y: '50%', opacity: 0}, "-=1")
-                .from(".intro__img-circle__span", {scale: 0, opacity: 0}, "-=1.5")
-                .from(".intro__img", {opacity: 0}, "-=1")
-                .from(".intro__scrollArrow", {y: '-200%', opacity: 0}, "-=.4")
-});
+//   var tl = gsap.timeline({ defaults: { duration: 1 } });
+//   tl.from(".intro__bg", { delay: 1, x: '-100%' })
+//     // .from(".header", { x: '-100%', opacity: .5 }, "-=.5")
+//     .from(".header__bg", { x: '-100%', opacity: 0 }, "-=.5")
+//     .from(".ham", { opacity: 0 })
+//     .from(".intro__logo", { x: '-50%', opacity: 0 }, "-=.5")
+//     .from(".intro__item-stick", { x: '-100%', width: 0, opacity: 0 }, "-=1")
+//     .from(".intro__item-text", { x: '-10%', opacity: 0 }, "-=.2")
+//     .from(".intro__btn-box2", { x: '-20%', opacity: 0 }, "-=.8")
+//     .from(link, { stagger: .3, opacity: 0 }, "-=2")
+//     .from(".intro__title", { y: '20%', opacity: 0 }, "-=1.5")
+//     .from(".intro__text", { y: '50%', opacity: 0 }, "-=1.3")
+//     .from(".intro__btn-box1", { y: '50%', opacity: 0 }, "-=1")
+//     .from(".intro__img-circle__span", { scale: 0, opacity: 0 }, "-=1.5")
+//     .from(".intro__img", { opacity: 0 }, "-=1")
+//     .from(".intro__scrollArrow", { y: '-200%', opacity: 0 }, "-=.4")
+
+// });
 
 $(function () {
 
@@ -132,6 +134,10 @@ $(function () {
       scrollTop: elementOffset - 180                           /* - 50px  */
     }, 500);                                                /* Скорость прокрутки где 1000 - 1 секунда */
   });
+
+
+
+
 
 
 
