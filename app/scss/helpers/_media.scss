@@ -43,9 +43,18 @@
     transform: translateX(95px);
 
     &.active{
-      transform: translateX(-68%);
+      transform: translateX(-73%);
       opacity: 1;
-      box-shadow: 0 0 10px 10px rgba(#b6b2b2, .7);
+    }
+  }
+  .header__inner .intro__item{
+  
+    &::before{
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      left: 15px;
+      transform: translateY(-80%);
     }
   }
 }
@@ -257,10 +266,6 @@
 
     .intro__item{
       font-size: rem(15);
-
-      &::before{
-        display: none;
-      }
     }
   }
 }
@@ -384,12 +389,6 @@
     span{
       top: 70%;
 
-    }
-  }
-  .services__textRight-up{
-    span{
-      // right: -45px;
-      // top: 50%;
     }
   }
   .services__textRight-down{

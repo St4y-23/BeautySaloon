@@ -41,6 +41,10 @@ body{
 	// min-width: 320px;
 	overflow-x: hidden;
 	position: relative;
+
+	&.active{
+		overflow: hidden;
+	}
 }
 .content{
 	overflow-x: hidden;
