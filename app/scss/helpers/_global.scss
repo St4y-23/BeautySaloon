@@ -1,7 +1,6 @@
 html{
 	box-sizing: border-box;
 	font-size: 16px;
-	overflow: hidden;
 }
 
 *, *::before, *::after{
@@ -42,6 +41,9 @@ body{
 	// min-width: 320px;
 	overflow-x: hidden;
 	position: relative;
+}
+.content{
+	overflow-x: hidden;
 }
 
 .container-fluid{
