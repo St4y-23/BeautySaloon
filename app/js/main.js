@@ -38,10 +38,6 @@ $(window).on('load', function () {
       .from(".intro__btn-box2", { y: '50%', opacity: 0 }, "-=.8")
       .from(".intro__scrollArrow", { y: '-200%', opacity: 0 }, "-=.8")
 
-      $('.ham').on('click', function () {
-        $('body').toggleClass('active')
-      });
-
 
     console.log('small')
   }
@@ -155,7 +151,6 @@ $(function () {
 
     nav.removeClass("active"),
       $(".ham").toggleClass("active"),
-      $('body').toggleClass('active')
 
       // console.log(elementOffset);
 
