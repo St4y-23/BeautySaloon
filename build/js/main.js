@@ -38,18 +38,9 @@ $(window).on('load', function () {
       .from(".intro__btn-box2", { y: '50%', opacity: 0 }, "-=.8")
       .from(".intro__scrollArrow", { y: '-200%', opacity: 0 }, "-=.8")
 
-      $('.ham').on('click', function () {
-        $('body').toggleClass('active')
-      });
-
 
     console.log('small')
   }
-
-  // if (window.matchMedia("(max-width: 850px)").matches) {
-    
-  // } 
-
 
 });
 
@@ -68,7 +59,6 @@ $(function () {
     slidesToShow: 1,
     arrows: true,
     fade: true,
-    // adaptiveHeight: true,
     prevArrow: '<button type="button" class="slick-prev slide__arrow reviews__arrow-left"><svg class="arrow__icon"><use xlink:href="#arrow"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-prev slide__arrow reviews__arrow-right"><svg class="arrow__icon"><use xlink:href="#arrow"></use></svg></button>',
     responsive: [
@@ -155,13 +145,11 @@ $(function () {
 
     nav.removeClass("active"),
       $(".ham").toggleClass("active"),
-      $('body').toggleClass('active')
 
-      // console.log(elementOffset);
 
-      $("html, body").animate({                                 /* При клике плавно скролит до элемента по которому кликнули */
-        scrollTop: elementOffset - 180                           /* - 50px  */
-      }, 500);                                                /* Скорость прокрутки где 1000 - 1 секунда */
+      $("html, body").animate({
+        scrollTop: elementOffset - 180
+      }, 500);
   });
 
 
