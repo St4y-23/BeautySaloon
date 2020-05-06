@@ -411,6 +411,9 @@
 
 // cases  /////////////////////////
 @media (max-width: 1050px){
+  .cases .container{
+    padding: 0;
+  }
   .cases__inner{
     flex-wrap: wrap;
   }
